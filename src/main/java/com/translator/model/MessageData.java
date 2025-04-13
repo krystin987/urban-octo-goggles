@@ -12,10 +12,10 @@ public class MessageData {
     private String status;
 
     @XmlElement(name = "Priority")
-    private int priority;
+    private Integer priority;
 
     @XmlElement(name = "Confidence")
-    private double confidence;
+    private Double confidence;
 
     @XmlElement(name = "Category")
     private String category;
@@ -24,10 +24,10 @@ public class MessageData {
     private String region;
 
     @XmlElement(name = "RetryCount")
-    private int retryCount;
+    private Integer retryCount;
 
     @XmlElement(name = "Score")
-    private double score;
+    private Double score;
 
     // Getters and setters
 
@@ -37,10 +37,14 @@ public class MessageData {
     public String getStatus() { return status; }
     public void setStatus(String status) { this.status = status; }
 
-    public int getPriority() { return priority; }
+    public Integer getPriority() {
+        return this.priority;
+    }
     public void setPriority(int priority) { this.priority = priority; }
 
-    public double getConfidence() { return confidence; }
+    public Double getConfidence() {
+        return this.confidence;
+    }
     public void setConfidence(double confidence) { this.confidence = confidence; }
 
     public String getCategory() { return category; }
@@ -49,9 +53,13 @@ public class MessageData {
     public String getRegion() { return region; }
     public void setRegion(String region) { this.region = region; }
 
-    public int getRetryCount() { return retryCount; }
+    public Integer getRetryCount() {
+        return this.retryCount;
+    }
     public void setRetryCount(int retryCount) { this.retryCount = retryCount; }
 
-    public double getScore() { return score; }
+    public Double getScore() {
+        return this.score;
+    }
     public void setScore(double score) { this.score = score; }
 }
